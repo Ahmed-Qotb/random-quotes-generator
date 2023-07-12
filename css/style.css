@@ -1,0 +1,9 @@
+.Qbtn{
+    transition: all 0.5s;
+}
+
+.Qbtn:hover{
+    background-color: white !important;
+    color: black !important;
+}
+
