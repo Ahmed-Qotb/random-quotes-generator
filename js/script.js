@@ -17,15 +17,16 @@ var quteArr = [
 ];
 
 function randGen() {
+    
     var randNumber = Math.floor(Math.random() * (quteArr.length));
-
-    // if (prevQoute == randNumber) {
-    //     (randGen())
-    // } else {
-    //     document.getElementById('randomQuote').innerHTML = quteArr[randNumber];
-    //     console.log(randNumber)
-    // }
-    // var prevQoute = randNumber;
+    if (prevQoute == randNumber) {
+        randGen()
+    } else {
+        document.getElementById('randomQuote').innerHTML = quteArr[randNumber];
+        console.log(randNumber);
+        var prevQoute = randNumber;
+    }
+    
 
 }
 
